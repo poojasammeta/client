@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Signika+Negative:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playwrite FR Moderne", cursive;
+  background-color: #f0f0f0;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background-image: url(./images/9.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper.active .form-box-register {
+  transition: translate 0.18s ease;
+  translate: 5px;
+}
+
+.wrapper.active .form-box-login {
+  transition: none;
+  translate: -400px;
+}
+
+.box {
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: -415px;
+  margin-bottom: -70px;
+  overflow: hidden;
+}
+
+.box1 {
+  width: 800px;
+  height: 670px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: -620px;
+  margin-bottom: -70px;
+  overflow: hidden;
+}
+
+.box.active {
+  height: 600px;
+}
+
+.form-box-login {
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  position: absolute;
+  translate: 0;
+  transition: translate 0.18s ease;
+  margin-left: 30px;
+}
+
+.form-box-register {
+  width: 300px;
+  height: 420px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  position: absolute;
+  translate: 450px;
+  margin-top: -5px;
+  margin-left: 25px;
+}
+
+.form-box-register.active {
+  display: block;
+}
+
+.form-box.inactive {
+  display: none;
+}
+
+.heading {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Playwrite FR Moderne", cursive;
+  margin-top: -450px;
+  margin-left: 400px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: #888;
+}
+
+.remember-forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.remember-forget a {
+  color: maroon;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link a {
+  color: maroon;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: rgb(181, 7, 7);
+}
+
+.style3 {
+  text-align: center;
+  color: maroon;
+  font-family: "Signika Negative", sans-serif;
+}

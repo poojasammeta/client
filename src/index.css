@@ -1,13 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ga+Maamli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ga+Maamli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Signika+Negative:wght@300..700&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*body {
+  background-image: url("./images/9.jpg");
+  background-size: 1255px 500px;
+  background-repeat: no-repeat;*/
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.search-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Reduced space between search box and additional text */
+}
+
+.search-box {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 3px 0px black; /* Light shadow */
+  padding: 10px; /* Inner padding */
+  margin: 15px auto; /* Reduced space between search box and additional text */
+}
+
+.search-box input {
+  width: 300px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px 0 0 25px;
+  height: 5px;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border-radius: 0 25px 25px 0; /* Rounded corners for right side */
+  color: black;
+}
+
+.search-box button svg {
+  width: 24px;
+  height: 24px;
+  fill: black;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 130px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Signika Negative", sans-serif;
+  color: black;
+}
+
+.nav-list li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-list li:hover {
+  text-decoration: underline;
+  color: maroon;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-image: url(./images/9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  /* Added padding to top and bottom */
+}
+
+.additional-content {
+  text-align: center;
+  padding: 10px; /* Reduced padding */
+  background: rgba(255, 255, 255, 0.8);
+  margin: 10px auto; /* Reduced margin */
+  max-width: 800px;
+  border-radius: 10px;
+  color: rgb(159, 3, 3);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 50px auto;
+}
+
+.recipes-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Reduced gap between recipes */
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto; /* Reduced margin */
+}
+
+.recipe img {
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.recipeImg {
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  border-radius: 11px;
+}
+
+.recipeImg p {
+  font-weight: 600;
+}
+
+.recipeImg button {
+  width: 120px;
+  background-color: brown;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.recipeInfo {
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  background-color: white;
+  padding: 32px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+}
+
+.recipeInfo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 11px;
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from info */
+  margin-top: 26px;
+}
+
+.recipeInfo .info {
+  flex: 1; /* Take remaining space */
+  margin-top: 0; /* Remove top margin */
+}
+
+.recipeInfo button {
+  border: none;
+  padding: 9px 18px; /* Increase padding for button */
+  border-radius: 6px;
+  font-size: 1rem; /* Adjust button font size */
+  background-color: orangered;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px; /* Add margin above button */
+}
+
+.recipeInfo button:hover {
+  background-color: #ff6347; /* Darken button color on hover */
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style {
+  font-family: "Ga Maamli", sans-serif;
+}
+.style1 {
+  font-family: "Playfair Display", serif;
+  padding: 10px;
 }
