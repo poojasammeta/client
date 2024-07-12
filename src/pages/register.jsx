@@ -24,7 +24,7 @@ const Register = () => {
       .post("http://localhost:4000/register", { username, email, password })
       .then((result) => {
         console.log("Registration successful:", result);
-        window.location.href = "/login";
+        window.location.href = "server-deployment-sigma.vercel.app";
       })
       .catch((err) => {
         console.log("Registration error:", err);
