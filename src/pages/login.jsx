@@ -13,7 +13,7 @@ const Login = ({ setIsLoggedIn }) => {
     event.preventDefault();
 
     axios
-      .post("https://server-deployment-sigma.vercel.app/userRoute/login", {
+      .post("https://server-deployment-mtre.onrender.com/userRoute/login", {
         username,
         password,
       })

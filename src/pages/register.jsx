@@ -21,7 +21,7 @@ const Register = () => {
       password,
     });
     axios
-      .post("https://server-deployment-sigma.vercel.app/userRoute/register", {
+      .post("https://server-deployment-mtre.onrender.com/userRoute/register", {
         username,
         email,
         password,
