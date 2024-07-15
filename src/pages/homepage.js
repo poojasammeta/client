@@ -54,7 +54,7 @@ const Homepage = () => {
             <ul className="nav-list">
               <li>
                 <a
-                  href="http://localhost:3000/login"
+                  href="https://client-deployment-vulz.onrender.com/login"
                   style={{ color: "maroon" }}
                 >
                   Logout
