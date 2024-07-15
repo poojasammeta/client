@@ -21,10 +21,14 @@ const Register = () => {
       password,
     });
     axios
-      .post("http://localhost:4000/register", { username, email, password })
+      .post("https://server-deployment-sigma.vercel.app/userRoute/register", {
+        username,
+        email,
+        password,
+      })
       .then((result) => {
         console.log("Registration successful:", result);
-        window.location.href = "server-deployment-sigma.vercel.app";
+        window.location.href = "/login";
       })
       .catch((err) => {
         console.log("Registration error:", err);

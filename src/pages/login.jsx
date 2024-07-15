@@ -13,7 +13,10 @@ const Login = ({ setIsLoggedIn }) => {
     event.preventDefault();
 
     axios
-      .post("http://localhost:4000/login", { username, password })
+      .post("https://server-deployment-sigma.vercel.app/userRoute/login", {
+        username,
+        password,
+      })
       .then((response) => {
         if (response.data === "Success") {
           setIsLoggedIn(true);
