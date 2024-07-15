@@ -54,7 +54,7 @@ const Homepage = () => {
             <ul className="nav-list">
               <li>
                 <a
-                  href="https://server-deployment-sigma.vercel.app/login"
+                  href="http://localhost:3000/login"
                   style={{ color: "maroon" }}
                 >
                   Logout
