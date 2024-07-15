@@ -13,7 +13,7 @@ const Login = ({ setIsLoggedIn }) => {
     event.preventDefault();
 
     axios
-      .post("https://server-deployment-sigma.vercel.app//login", {
+      .post("https://server-deployment-sigma.vercel.app/login", {
         username,
         password,
       })
